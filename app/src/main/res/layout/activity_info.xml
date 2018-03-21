@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_img"
+    tools:context="com.vistasoftit.rashifal.ShowInfo"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="Name"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDay"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Day"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvColor"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Color"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNumber"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Number"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Characteristics"
+            android:id="@+id/characteristics"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/roundcorner_ash_big"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tb_bangla"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#18A8FF"
+                    android:textSize="30sp"
+                    android:layout_weight="50"
+                    android:id="@+id/love"
+                    android:text="Love"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TableRow
+                android:id="@+id/tb_english"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingLove"
+                    android:isIndicator="true"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    style= "@style/CustomRatingBar"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/roundcorner_ash_big"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tb_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#18A8FF"
+                    android:textSize="30sp"
+                    android:id="@+id/money"
+                    android:layout_marginLeft="10dp"
+                    android:text="Money"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TableRow
+                android:id="@+id/tb_monrate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingMoney"
+                    android:layout_width="wrap_content"
+                    style= "@style/CustomRatingBar"
+                    android:isIndicator="true"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/roundcorner_ash_big"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tb_car"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="30sp"
+                    android:textColor="#18A8FF"
+                    android:id="@+id/carrier"
+                    android:text="Carrier"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TableRow
+                android:id="@+id/tb_moncarrier"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingcarrier"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    style= "@style/CustomRatingBar"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/roundcorner_ash_big"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tb_frnd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="30sp"
+                    android:id="@+id/friends"
+                    android:text="friends"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#18A8FF"
+                    android:layout_height="wrap_content" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TableRow
+                android:id="@+id/tb_frndrat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingEducation"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    style= "@style/CustomRatingBar"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/roundcorner_ash_big"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tb_enemy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="30sp"
+                    android:textColor="#18A8FF"
+                    android:id="@+id/enemy"
+                    android:text="Enemy"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <TableRow
+                android:id="@+id/tb_enemyrat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingEnemy"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    style= "@style/CustomRatingBar"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

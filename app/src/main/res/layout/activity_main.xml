@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hospital"
+    android:layout_width="match_parent"
+    android:background="@drawable/header_img"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvName"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName|textCapWords"
+                android:backgroundTint="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent"
+                android:id="@+id/editText_name"
+                android:textColorHint="#FFF"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="30sp"
+            android:id="@+id/tvBirthDate"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/linearLayoutDay"
+                android:layout_weight="50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/gradient_spinner"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="50dp">
+
+
+            <Spinner
+                android:id="@+id/spinnerDay"
+                android:layout_width="match_parent"
+                android:backgroundTint="#FFF"
+                android:layout_height="match_parent"></Spinner>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/linearLayoutMonth"
+                android:layout_weight="50"
+                android:background="@drawable/gradient_spinner"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp">
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="#FFF"
+                android:layout_alignParentStart="true"
+                ></Spinner>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#18A8FF"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_call"
+            android:id="@+id/button2" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
